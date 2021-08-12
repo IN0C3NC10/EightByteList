@@ -55,13 +55,14 @@ const styles = StyleSheet.create({
     },
     // ..estilos da lista
     listNames: {
-        marginTop: 20,
+        marginVertical: 40,
         width: "80%",
     },
     listData: {
         width: "100%",
         color: "black",
         height: 50,
+        marginVertical: 5,
         alignContent: "center",
         textAlign: "center",
     },

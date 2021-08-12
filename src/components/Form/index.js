@@ -75,7 +75,7 @@ export default function Form() {
                 // habilita, ou não a barra de rolagem
                 showsVerticalScrollIndicator={true}
                 // inverte a lista p/ mostrar o resultado recem feito primeiro
-                data={nameList.reverse()}
+                data={nameList}
                 // ..para cada item o conteúdo é exibido, semelhante ao 'while'
                 renderItem={({ item }) => {
                     return (
