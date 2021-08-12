@@ -69,15 +69,6 @@ const styles = StyleSheet.create({
         fontSize: 20,
         marginTop: 30,
     }
-    // listView1: {
-    //     alignContent: "left",
-    //     textAlign: "left",
-    // },
-    // listView2: {
-    //     marginTop:-19,
-    //     alignContent: "right",
-    //     textAlign: "right",
-    // },
 });
 
 export default styles

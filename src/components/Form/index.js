@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./style"
 import { View, Text, TextInput, TouchableOpacity, Vibration, Pressable, FlatList } from "react-native";
-import List from "./List/";
 
 export default function Form() {
     //..PARTE RESPONSÁVEL PELA ALTERAÇÃO DO STATUS DA APLICAÇÃO
@@ -72,13 +71,6 @@ export default function Form() {
                     <Text style={styles.textButton}>Cadastrar</Text>
                 </TouchableOpacity>
             </Pressable>
-            {/* <View style={styles.listNames}>
-                 <TouchableOpacity onPress={() => validationName()} style={styles.button}>
-                     <Text style={styles.textButton}>{textButton}</Text>
-                 </TouchableOpacity>
-                 <List list={nameList}/>
-             </View> */}
-
             <FlatList style={styles.listNames}
                 // habilita, ou não a barra de rolagem
                 showsVerticalScrollIndicator={true}
