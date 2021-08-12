@@ -10,7 +10,7 @@ export default function Form() {
     const [textButton, setTextButton] = useState("Cadastrar")
     const [errorMessage, setErrorMessage] = useState(null)
     //..state relacionado a lista
-    const [nameList, setNameList] = useState([])
+    const [nameList, setNameList] = useState([{id:new Date().getTime(),name:"Boerzera Almeida"}])
 
     // função responsável pela validação simples dos campos
     function validationName() {
@@ -20,11 +20,11 @@ export default function Form() {
             //..lembrando que a mensagem não é específica
             setErrorMessage("Campo Obrigatório!*")
             Vibration.vibrate();
-        } else if (name != null) {
+        } else if (name != null && name != "") {
             //..se der bom
             setNameList((arr) => [...arr, { id: new Date().getTime(), name: name }])
             setTextButton("Registrar Novamente")
-            setName('')
+            setName("")
             setErrorMessage(null)
         } else {
             //..se der cagada em tudo
@@ -33,12 +33,14 @@ export default function Form() {
         }
     }
 
+    
+
     return (
         <View style={styles.formContext}>
             <Pressable style={styles.form}>
                 <Text style={styles.label}>Nome</Text>
-                <Text style={styles.errorMessage}>{errorMessage}</Text>
                 <TextInput onChangeText={setName} value={name} placeholder="Ex. Alex Trombogosi" keyboardType="default" style={styles.input} />
+                <Text style={styles.errorMessage}>{errorMessage}</Text>
                 <TouchableOpacity onPress={() => validationName()} style={styles.button}>
                     <Text style={styles.textButton}>{textButton}</Text>
                 </TouchableOpacity>
@@ -51,7 +53,7 @@ export default function Form() {
                 // ..para cada item o conteúdo é exibido, semelhante ao 'while'
                 renderItem={({ item }) => {
                     return (
-                        <Text style={styles.listText1}>{item.name}</Text>
+                        <Text style={styles.listText}>{item.name}</Text>
                     )
                 }}
                 // ..p/ cada item é necessário usar uma chave única, neste caso o 'id'

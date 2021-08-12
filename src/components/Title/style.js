@@ -7,12 +7,12 @@ const styles = StyleSheet.create({
       padding: 10,
     },
     textTitleSimple:{
-        color: "gray",
+        color: "#0080ff",
         fontSize: 24,
         fontWeight: "bold",
     },
     textTitle:{
-      color: "#ff0043",
+      color: "black",
   },
   });
 

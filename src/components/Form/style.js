@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     input: {
         width: "90%",
         height: 40,
-        backgroundColor: "#f6f6f6",
+        backgroundColor: "white",
         borderRadius: 50,
         margin: 12,
         paddingLeft: 10,
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         width: "90%",
         alignItems: "center",
         borderRadius: 50,
-        backgroundColor: "#ff0043",
+        backgroundColor: "#0080ff",
         paddingTop: 14,
         paddingBottom: 14,
         marginLeft: 12,
@@ -56,16 +56,13 @@ const styles = StyleSheet.create({
     listNames: {
         marginTop: 20,
     },
-    listText1: {
+    listText: {
         width: "100%",
-        fontSize: 26,
-        color: "red",
+        fontSize: 20,
+        color: "black",
         height: 50,
         paddingRight: 20,
-    },
-    listText2: {
-        fontSize: 16,
-        color: "gray",
+        textAlign: "center",
     },
 });
 
