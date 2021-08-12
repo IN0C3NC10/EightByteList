@@ -10,7 +10,7 @@ export default function Form() {
     const [textButton, setTextButton] = useState("Cadastrar")
     const [errorMessage, setErrorMessage] = useState(null)
     //..state relacionado a lista
-    const [nameList, setNameList] = useState([{id:new Date().getTime(),name:"Boerzera Almeida"}])
+    const [nameList, setNameList] = useState([{id:new Date().getTime(), name:"Boerzera Almeida"}])
 
     // função responsável pela validação simples dos campos
     function validationName() {
