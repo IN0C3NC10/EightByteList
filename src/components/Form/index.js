@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./style"
-import { View, Text, TextInput, TouchableOpacity, Vibration, Pressable, Keyboard, FlatList } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, Vibration, Pressable, FlatList } from "react-native";
 
 export default function Form() {
     //..PARTE RESPONSÁVEL PELA ALTERAÇÃO DO STATUS DA APLICAÇÃO
