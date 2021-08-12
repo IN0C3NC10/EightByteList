@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
         color: "black",
         fontSize: 18,
         paddingLeft: 20,
+        paddingTop: 20,
     },
     input: {
         width: "90%",
@@ -32,13 +33,13 @@ const styles = StyleSheet.create({
     // ..pertence ao botão
     button: {
         justifyContent: "center",
-        width: "90%",
+        width: "100%",
         alignItems: "center",
-        borderRadius: 50,
+        borderRadius: 10,
         backgroundColor: "#0080ff",
         paddingTop: 14,
         paddingBottom: 14,
-        marginLeft: 12,
+        // marginLeft: 12,
         marginTop: 30,
     },
     textButton: {
@@ -55,15 +56,28 @@ const styles = StyleSheet.create({
     // ..estilos da lista
     listNames: {
         marginTop: 20,
+        width: "80%",
     },
-    listText: {
+    listData: {
         width: "100%",
-        fontSize: 20,
         color: "black",
         height: 50,
-        paddingRight: 20,
+        alignContent: "center",
         textAlign: "center",
     },
+    listText1: {
+        fontSize: 20,
+        marginTop: 30,
+    }
+    // listView1: {
+    //     alignContent: "left",
+    //     textAlign: "left",
+    // },
+    // listView2: {
+    //     marginTop:-19,
+    //     alignContent: "right",
+    //     textAlign: "right",
+    // },
 });
 
 export default styles
