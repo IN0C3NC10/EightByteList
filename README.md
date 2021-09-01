@@ -63,10 +63,11 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 $ git clone <https://github.com/IN0C3NC10/EightByteList.git>
 
 # Abra a pasta no seu VSCode ou editor de preferência
-# Execute o projeto com
-$ npm start
 
-# Quando iniciado, utilize o "w" para escolher "Open in browser"
+# Execute o projeto com
+$ npm run web
+
+# BeHappy!
 ```
 <!-- Autor -->
 <h2 align="left" id="autor">Autor</h2>
