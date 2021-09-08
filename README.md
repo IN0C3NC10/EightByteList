@@ -64,6 +64,9 @@ $ git clone <https://github.com/IN0C3NC10/EightByteList.git>
 
 # Abra a pasta no seu VSCode ou editor de preferência
 
+# Instale os pacotes necessários p/ execução com
+$ npm install
+
 # Execute o projeto com
 $ npm run web
 
